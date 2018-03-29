@@ -1,0 +1,22 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    ["babel-plugin-root-import", [{
+      "rootPathPrefix": "~",
+      "rootPathSuffix": ""
+    }, {
+      "rootPathPrefix": "@",
+      "rootPathSuffix": "server"
+    }]],
+    "transform-class-properties",
+    "transform-export-extensions",
+    "babel-plugin-syntax-flow",
+    "babel-plugin-transform-flow-strip-types"
+  ]
+}

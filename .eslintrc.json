@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "import/resolver": {
+      "babel-plugin-root-import": {}
+    }
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "flowtype-errors"
+  ],
+  "rules": {
+    "no-underscore-dangle": 0,
+    "no-unused-vars": ["error", { "args": "none" }],
+    "class-methods-use-this": ["off"],
+    "no-use-before-define": ["error", {
+      "functions": false,
+      "classes": false
+    }],
+    "arrow-parens": ["error", "as-needed", {
+      "requireForBlockBody": false
+    }],
+    "prettier/prettier": "error",
+    "flowtype-errors/show-errors": 2
+  }
+}

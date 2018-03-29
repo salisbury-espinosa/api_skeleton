@@ -1,0 +1,18 @@
+[ignore]
+./node_modules
+./build
+./flow-typed
+
+[include]
+./server
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^~/\(.*\)$' -> '<PROJECT_ROOT>/\1'
+module.name_mapper='^@/\(.*\)$' -> '<PROJECT_ROOT>/server/\1'
+module.file_ext=.js
+
+[strict]

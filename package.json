@@ -7,10 +7,9 @@
   "main": "index.js",
   "scripts": {
     "start": "cd build && node main",
-    "compile": "node build.js && backpack build",
-    "dev": "node build.js && backpack dev | pino -o 'short' && npm start",
-    "debug": "node build.js && backpack dev --inspect-brk | pino -o 'short'",
-    "test": "node build.js && _mocha --compilers js:babel-register --exit",
+    "compile": "./build.sh && backpack build",
+    "dev": "./build.sh && backpack dev | pino -o 'short' && npm start",
+    "debug": "./build.sh && backpack dev --inspect-brk | pino -o 'short'",
     "lint": "eslint './server' './test'",
     "lintfix": "eslint --fix './server' './test'",
     "flow": "flow",

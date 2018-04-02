@@ -1,4 +1,3 @@
-// @flow
 import bodyParser from "body-parser";
 import compress from "compression";
 import helmet from "helmet";

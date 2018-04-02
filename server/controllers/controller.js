@@ -1,4 +1,3 @@
-// @flow
 import type { Router } from "express";
 
 export default class Controller {

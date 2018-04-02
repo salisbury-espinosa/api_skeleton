@@ -1,4 +1,4 @@
-// @flow
+
 export type TxId = string;
 export type Hash = string;
 export type Size = number;

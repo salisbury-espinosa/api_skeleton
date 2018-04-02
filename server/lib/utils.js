@@ -1,4 +1,3 @@
-// @flow
 import type { $Response, $Request, NextFunction } from "express";
 
 // eslint-disable-next-line import/prefer-default-export

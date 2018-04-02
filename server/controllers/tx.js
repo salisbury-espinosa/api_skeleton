@@ -1,4 +1,3 @@
-// @flow
 import type { $Response, $Request, Router, NextFunction } from "express";
 import type { TxId, Tx } from "../flow-typed/bitcoin";
 import BitcoinService from "../services/bitcoin";

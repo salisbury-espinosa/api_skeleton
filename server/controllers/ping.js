@@ -1,4 +1,3 @@
-// @flow
 import type { $Response, $Request, Router, NextFunction } from "express";
 import Controller from "./controller";
 

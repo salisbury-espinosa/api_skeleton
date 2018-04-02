@@ -1,16 +1,18 @@
 [ignore]
-./node_modules
-./build
-./flow-typed
+<PROJECT_ROOT>/node_modules
+<PROJECT_ROOT>/build
+<PROJECT_ROOT>/backpack.config.js
 
 [include]
-./server
+<PROJECT_ROOT>/server
+<PROJECT_ROOT>/config
 
 [libs]
 
 [lints]
 
 [options]
+all=true
 module.name_mapper='^~/\(.*\)$' -> '<PROJECT_ROOT>/\1'
 module.name_mapper='^@/\(.*\)$' -> '<PROJECT_ROOT>/server/\1'
 module.file_ext=.js

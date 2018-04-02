@@ -1,5 +1,3 @@
-/* @flow */
-
 import express, { type $Application } from "express";
 
 import HttpServer, { type ConfigHttpServer } from "./middleware/HttpServer";

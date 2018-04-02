@@ -1,13 +1,21 @@
-/* @flow */
 import { PORT } from "~/config";
-import Api, { type ConfigApi } from "@/api";
-import * as Controllers from "@/controllers";
+import Api, { type ConfigApi } from "./api";
+
+import PingController from "./controllers/ping";
+import TxController from "./controllers/tx";
+
+const controllers = [
+  {
+    Ctrl: PingController
+  },
+  {
+    Ctrl: TxController
+  }
+];
 
 export default Api.init(
   ({
-    controllers: Object.keys(Controllers).map((ctrlName: string) => ({
-      Ctrl: Controllers[ctrlName]
-    })),
+    controllers,
     serverPort: PORT
   }: ConfigApi)
 );
